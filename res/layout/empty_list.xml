@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fefefe"
+    >
+    <ProgressBar
+    	android:id="@+id/emptyListAnim"
+    	android:layout_width="100dip"
+    	android:layout_height="100dip"
+    	android:layout_centerInParent="true"
+    ></ProgressBar>
+	<TextView 
+		android:id="@+id/loadingText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Kocok Android anda sampai bergetar :)"
+		android:textColor="#444444"
+		android:textSize="12dip"
+		android:layout_below="@id/emptyListAnim"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="4dip"
+	/>   
+</RelativeLayout>

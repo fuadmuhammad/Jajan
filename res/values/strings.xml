@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Jajan!</string>
+    <string name="app_name">Jajan</string>
+    <string name="urbAPIKey">d525de574df5</string>
+</resources>
