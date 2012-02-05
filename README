@@ -1,0 +1,62 @@
+JAJAN by Urbanesia
+==================
+
+Jajan is a simple app to showcase Urbanesia's API v1.0 and how you can extend for your own apps.
+
+As of this writing, the initial commit is at sync with Jajan's binaries at Android Market which is version 1.1.1. Upcoming Jajan versions will NOT be published from the codebase here in Github, this repository is treated as an example for future third party apps by you.
+
+Jajan is available in multiple platforms, go to <http://jajan.urbanesia.com/>, if your device is one of the supported platform, it will redirect to your device's application store or it may have you download a binary for your platform.
+
+License
+=======
+
+Jajan - A simple app to find nearby Jajanans using Urbanesia API v1.0
+
+Copyright (C) 2012 Batista R. Harahap
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+JAJAN Flow
+==========
+
+When you first run the application, Jajan will try to detect your location. Upon successful detection, Jajan will query Urbanesia for nearby Jajanans. Jajan will also query Google to reverse geocode the coordinates retrieved earlier.
+
+To get new Jajanans, simply shake your phone and Jajan will vibrate to indicate a successful shake event.
+
+Jajan uses Wikitude API to integrate Augmented Reality view. There is a dedicated icon on the action bar, when clicked, Jajan will try to launch Wikitude and overlay the camera view with POIs from nearby Jajanans.
+
+Urbanesia also have places that has been photographed for Panoramic Views. If any of the nearby Jajanans contain images suited for Panoramic View, Jajan will show a special icon, when clicked, Jajan will download the images and launches Panoramic View upon successful downloads.
+
+Urbanesia API v1.0
+==================
+
+Jajan is using data from Urbanesia API v1.0, the version commited to this repository does not have the proper authorization details yet to connect to the API. To gain access, please go to <http://wwww.urbanesia.com/auth/api_reg/> and register.
+
+Urbanesia API v1.0 is protected using OAuth v1.0a and a client library called OAUTHnesia is available within Jajan to connect to the API. However, the library in Jajan lacks update, please do not use this for your perusal. You can find OAUTHnesia for various platforms here <https://github.com/search?q=oauthnesia>.
+
+Dependencies
+============
+
+Jajan is using third party libraries which are:
+- Flurry Analytics <http://www.flurry.com>
+- PanoramaGL <link below>
+- Wikitude API <link below>
+- Apache Commons Codec <http://commons.apache.org/codec/>
+
+Acknowledgements
+================
+
+Jajan is using libraries from PanoramaGL for Android available for download here <http://code.google.com/p/panoramagl-android/>. Thank you for an excellent and easy way of integrating Panoramic Views.
+
+Jajan is using libraries from Wikitude to enable Augmented Reality view. Wikitude API Keys are not included with the version in this repository. You can get the key by going here <http://www.wikitude.com/developer/getting-started>.
